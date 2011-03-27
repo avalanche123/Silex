@@ -42,6 +42,11 @@ class ControllerCollection
         $this->controllers[] = $controller;
     }
 
+    public function all()
+    {
+        return $this->controllers;
+    }
+
     /**
      * Persists and freezes staged controllers.
      */
